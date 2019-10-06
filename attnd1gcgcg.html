@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COLLEGEBUDDY</title>
+<link rel="shortcut icon" type="image/x-icon" href="icon.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <script src="./js/granim.min.js"></script>
+
+
+
+<style>
+  body,html{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 20px;
+	background:url(imgd.jpg);
+  }
+
+
+#canvas-basic {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.text-center{
+  width: 100vw;
+  height: 300px;
+  text-align: center;
+}
+
+.center-container {
+  width: 50vw;
+  margin-left: 20vw;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 5em;
+  position: absolute;
+  z-index: -1;
+  color: white;
+  letter-spacing: 15px;
+
+}
+
+#msg{
+position:absolute;
+height:400px;
+width:300px;
+background:none;
+top:100px;
+left:40px;
+font-family:Cooper black;
+}
+
+
+
+
+table {
+  font-family:Cooper black;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 20px;
+  border:3px solid black;
+}
+
+td, th {
+  border: 1px solid grey;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: none;
+}
+tr:nth-child(odd) {
+  background-color: none;
+}
+button{
+left:0;
+width:80%;
+background:blue;
+  border: none;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+  margin:12px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.3);
+  transition: 2s;
+}
+.btn:hover{
+  box-shadow: none;
+  transition: 2s;
+  background: #green;
+}
+  input[type='text']{
+    border: none;
+    background: #fcd5f8;
+    border-radius: 10px;
+    color: black;
+    height: 30px;
+    font-size: 20px;
+  }
+</style>
+
+</head>
+<body>
+
+
+
+
+<div class="text-center">
+   <div id="msg"><h1>KEEP <br><br>ATTENDANCE<br><br>HIGH AS<br><br>SKY</h1></div>
+  <div class="center-container">
+ 
+  </div>
+</div>
+<div style="background:none;">
+<div style="position:absolute;top:8%;left:28%;heigth:500px;width:750px;background:none;">
+<table id="myTable" height="500px" width="750px">
+  <tr>
+    <th>SUBJECT</th>
+    <th>ATTENDED</th>
+  <th>TOTAL LECTURES</th>
+    <th>ATTANDANCE(in %)</th>
+    
+</tr>
+  <tr>
+    <td><b>DBMS</b></td>
+    <td><input type="text" id="r1c1"></td>
+  <td><input type="text" id="r1c2"></td>
+    <td id="r1c3" onclick="fn()"></td>
+    
+</tr>
+  <tr>
+    <td><b>SOFTWARE ENGNEERING</b></td>
+    <td><input type="text" id="r2c1"></td>
+  <td><input type="text" id="r2c2" onkeyup="fn1()"></td>
+    <td id="r2c3" onclick="fn1()"></td>
+    
+</tr>
+<tr>
+    <td><b>JAVA</b></td>
+    <td><input type="text" id="r3c1"></td>
+  <td><input type="text" id="r3c2"></td>
+    <td id="r3c3" onclick="fn2()"></td>
+    
+</tr>
+<tr>
+    <td><b>CST</b></td>
+    <td><input type="text" id="r4c1"></td>
+  <td><input type="text" id="r4c2"></td>
+    <td id="r4c3" onclick="fn3()"></td>
+    
+</tr>
+</table>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button onclick="fn(),fn1(),fn2(),fn3()" class="btn">UPDATE</button>
+</div>
+</div>
+
+<script>
+function fn()
+{
+var x=document.getElementById("r1c1").value;
+var y=document.getElementById("r1c2").value;
+
+r1c3.innerHTML=(eval(x/y)*100).toFixed(2);
+}
+function fn1()
+{
+var x=document.getElementById("r2c1").value;
+var y=document.getElementById("r2c2").value;
+
+r2c3.innerHTML=(eval(x/y)*100).toFixed(2);
+}
+function fn2()
+{
+var x=document.getElementById("r3c1").value;
+var y=document.getElementById("r3c2").value;
+
+r3c3.innerHTML=(eval(x/y)*100).toFixed(2);
+}
+function fn3()
+{
+var x=document.getElementById("r4c1").value;
+var y=document.getElementById("r4c2").value;
+
+r4c3.innerHTML=(eval(x/y)*100*100).toFixed(2);
+}
+</script>
+
+</body>
+</html>

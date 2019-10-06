@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COLLEGEBUDDY</title>
+<link rel="shortcut icon" type="image/x-icon" href="icon.png"/>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0; 
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+input[type=file], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #848484;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 3px solid green;
+}
+</style>
+</head>
+<body>
+
+
+<div>
+  <form action="mainpg.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+    <label for="father">Father Name</label>
+    <input type="text" id="fthname" placeholder="Father name"/>
+    <label for="father">Mother Name</label>
+    <input type="text" id="mthname" placeholder="Mother name"/>
+    <label for="father">Date of Birth</label>
+    <input type="date" id="mthname"/>
+    <label for="branch">Select Branch</label>
+    <select id="branch" name="branch">
+    <option selected disabled>Select Branch</option>
+    <option value="CSE">CSE</option>
+    <option value="ME">ME</option>
+    <option value="EE">EE</option>
+    </select>
+  	<label for="cgpa">CGPA</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your CGPA"/>
+    <label for="fileupload">Upload your Photo</label> 
+    <input type="file" name="fileupload" value="fileupload" id="fileupload"/> 
+    <label for="ach">Add Skills</label>
+    <input type="text" id="achieve" placeholder="Things you are good at.."/>
+    <input type="button" value="Add Skills" onclick="f1()"/>
+    <ol id="one">
+    
+    </ol>
+     <label for="ach">Add Achievements</label>
+    <input type="text" id="achievez" placeholder="Achievements"/>
+    <input type="button" value="Add Achievements" onclick="f2()"/>
+    <ol id="two">
+    
+    </ol>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<script>
+function f1()
+{
+var para=document.createElement("li");
+var pog=document.getElementById("achieve").value;
+var node=document.createTextNode(pog);
+para.appendChild(node);
+var element=document.getElementById("one");
+element.appendChild(para);
+}
+function f2()
+{
+  var para=document.createElement("li");
+var pog=document.getElementById("achievez").value;
+var node=document.createTextNode(pog);
+para.appendChild(node);
+var element=document.getElementById("two");
+element.appendChild(para);
+}
+</Script>
+
+</body>
+</html>
