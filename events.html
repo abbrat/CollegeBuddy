@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>COLLEGEBUDDY</title>
+<link rel="shortcut icon" type="image/x-icon" href="icon.png"/>
+
+	<link rel="stylesheet" href="bookroom.css" type="text/css"> 		
+
+
+	</head>
+	
+	<body>
+
+
+		<div>
+			<h1 class="h">EXPLORE the Events</h1>
+		</div>
+		<table>
+			<tr>
+				<td>
+		<table>
+			<tr>
+				<td class="pic">
+					<img src="sport.jpg" class="img">
+				</td>
+				<td class="pic">
+					<img src="dance.jpg" class="img">
+				</td>
+			</tr>
+			<tr>
+				<td class="pic">
+					<img src="art.jpg" class="img">
+				</td>
+				<td class="pic">
+					<img src="quiz.jpg" class="img">
+				</td>
+			</tr>
+		</table>
+	</td>
+	
+	<td class="neg">
+		
+		<form class ="credentials" action="#" method="post">
+			
+			<div class="form">
+				
+				<label>First Name : <span class="required">*</span><input type="text" name="name" placeholder="First Name" required></label><br>
+				
+				<label>Last Name : <input type="text" name="name" placeholder="Last Name"></label><br>
+				
+				<label><span>Telephone : </span><input type="tel" class="telnumber1" name="tel_no_1" value="" maxlength="3" placeholder="+91"/>-<input type="tel" class="telnumber2" name="tel_no_2" value="" maxlength="10" /></label><br><br>
+				
+				<label>Email : <span class="required">* </span><input type="email" name="email" placeholder="Email address" required></label><br>
+				
+				<fieldset>
+				<legend> Select a event <span class="required">*</span></legend>
+				<p><label class="choice"> <input type="radio" required value="Standard" name="g1"> sport </label></p>
+				<p><label class="choice"> <input type="radio" required value="Buisness" name="g1"> quiz </label></p>
+				<p><label class="choice"> <input type="radio" required value="Holiday" name="g1"> art </label></p>
+				<p><label class="choice"> <input type="radio" required value="Penthouse" name="g1"> dance </label></p>
+				</fieldset>
+
+				<br>
+
+				
+				<center><input class="btn" type="submit" name="book" value="Apply"></center>
+				
+			</div>
+		
+		</form>
+	</td>
+</tr>
+</table>
+
+
+	</body>
+
+</html>

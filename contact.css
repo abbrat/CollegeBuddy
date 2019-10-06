@@ -1,0 +1,66 @@
+			.mail
+			{
+				background-color:rgb(255, 255, 255, 0.5);
+				margin:5%;
+				padding:2%;
+				text-align:center;
+				font: normal 160% 'Trebuchet-MS', arial, sans-serif;
+			}
+			.noul
+			{
+				color: brown;
+				text-decoration: none;
+			}
+			.call
+			{
+				background-color: rgb(255, 255, 255, 0.5);
+				margin:5%;
+				padding:2%;
+				text-align:center;
+				font: normal 160% 'Trebuchet-MS', arial, sans-serif;
+			}
+			.feedback
+			{
+				background-color: rgb(255, 255, 255, 0.5);
+				margin:5%;
+				padding:2%;
+				text-align:center;
+				font: normal 160% 'Trebuchet-MS', arial, sans-serif;
+			}
+			.oyo
+			{
+				background-color: rgb(255, 255, 255, 0.5);
+				margin:5%;
+				padding:2%;
+				text-align:center;
+				font: normal 160% 'Trebuchet-MS', arial, sans-serif;
+			}
+			body.body
+			{
+				background-image: url("coll.jpg");
+				backgrgggound-repeat: no-repeat;
+				background-position: center;
+				background-attachment: fixed;
+				background-size: 100% 100%;
+			}
+			h3.h3
+			{
+				color: brown;
+				font: normal 170% 'century gothic', arial, sans-serif;
+				font-size:40px;
+			}
+			a.mailref
+			{
+				text-decoration:none;
+				color:black;	
+				font-family: Papyrus;
+			}
+			p.p
+			{
+				font-family: Papyrus;
+				font-size:25px;
+			}
+			.low
+			{
+				padding-top: 20px;
+			}
