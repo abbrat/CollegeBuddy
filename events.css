@@ -1,0 +1,116 @@
+		
+body {
+	background-image: url("coll2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+div.form{
+	background-color: #f0f0f0;
+	padding: 30px 30px;
+	margin-right: 40px;
+	width:100%;
+
+
+}
+
+.credentials {
+align-content: right;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 20em;
+display: inline-block;
+padding-left: 40px;
+padding-top: 40px;
+margin-left: 50%;
+
+}
+
+.credentials * {
+box-sizing: border-box;
+}
+
+.credentials fieldset {
+border: 1px solid #ccc;
+padding: 0;
+}
+
+.credentials legend,
+.credentials label {
+padding: 0;
+font-weight: bold;
+}
+
+.credentials label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.credentials input[type="text"],
+.credentials input[type="email"],
+.credentials input[type="datetime-local"],
+.credentials select,
+.credentials textarea {
+display: block;
+width: 100%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+.btn{
+	width: 40%;
+	align-content: center;
+	border: 1px solid brown;
+	border-radius: 5px;
+}
+/*Form Ends*/
+
+
+.credentials .telnumber1{
+    width: 40px;
+    text-align: center;
+
+}
+
+.telnumber2{
+    width: 100px;
+    text-align: center;
+}
+
+span.required{
+    color:red;
+}
+
+a.term{
+	text-decoration: none;
+	color: brown;
+}
+a:hover.term{
+	color: black;
+}
+.img
+{
+	height:300px;
+	width:400px;
+	margin:2%;
+	padding:1%;
+}
+table.pic,tr.pic,td.pic
+{
+	border:0;
+	padding: 10px;
+	width: 30%;
+	height: 30%;
+}
+.neg{}
+
+h1.h{
+  font: normal 179% 'century gothic', arial, sans-serif;
+  color: brown;
+  text-align: center;
+  font-size: 50px;
+  background-color: rgb(255,255,255,0.4);
+
+}
